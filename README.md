@@ -19,6 +19,61 @@ Run this command without any parameters to list all languages and numbers.
   ./download-wp.sh -l russian -U -R
 ```
 
+#### Languages
+
+```
+17 - amharic            Amharic - አማርኛ
+16 - arabic             Arabic
+22 - bengali            Bengali - বাংলা
+39 - bulgarian          Bulgarian - Библия
+43 - burmese            Burmese - မြန်မာ
+13 - cantonese          Chinese - 廣東話 [Cantonese - CUV]
+04 - chinese            Chinese - 中文 [Mandarin - CUV]
+61 - chinese_cat        思高繁体圣经 [Si Gao Version]
+62 - cantonese_cath     思高繁体聖經 [Si Gao Version]
+32 - czech              Czech - Český
+01 - english            English Audio Bible [kjv]
+20 - farsi              Farsi (Persian)
+63 - finnish            Finnish - Suomalainen - NT
+07 - french             French - Français
+09 - german             German - Deutsch
+58 - greek              Greek - ελληνική - NT
+40 - mod_greek_2        Modern Greek - ελληνική
+23 - gujarati           Gujarati - ગુજરાતી
+03 - hindi              Hindi - हिंदी भाषा
+14 - indonesian         Indonesian [TB] -
+10 - italian            Italian - Italiano
+12 - japanese           Japanese - 日本語
+24 - kannada            Kannada - ಕನ್ನಡ
+11 - korean             Korean - 한국의
+41 - latin              Latin - Vulgata Latina - NT
+42 - luganda            Luganda Audio Bible
+25 - malayalam          Malayalam - മലയാളം
+28 - marathi            Marathi - मराठी
+26 - oriya              Oriya - ଓଡ଼ିଆ
+33 - polish             Polish - Polski
+02 - portuguese         Portuguese - Português
+02 - portuguese-BR      Portuguese - Português - BR
+27 - punjabi            Punjabi - ਪੰਜਾਬੀ
+34 - romanian           Romanian - Român
+08 - russian            Russian - русский
+31 - serbian            Serbian - Српски
+36 - somali             Somali - Soomaaliga
+06 - spanish            Spanish - Español
+05 - swahili            Swahili - Kiswahili
+64 - swedish            Swedish - Svenska - NT
+30 - tamil              Tamil - தமிழ் மொழி
+29 - telugu             Telugu - తెలుగు
+18 - thai               Thai - ไทย
+15 - turkish            Turkish - Türk
+65 - turkmen            Turkmen - Turkmenistan - NT
+67 - ukrainian          Ukrainian - Yкраїнський
+21 - urdu               Urdu
+100 - uhygur            Uyghur
+19 - vietnamese         Vietnamese - Tiếng Việt
+35 - zulu               Zulu - isiZulu
+```
+
 ### WebSite #2
 
 Coming soon ... for now checkout a previous project I made that downloaded Audio and Text from [http://www.audiobible.com/](http://www.audiobible.com/)
