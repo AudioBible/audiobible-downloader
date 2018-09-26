@@ -76,7 +76,7 @@ Run this command without any parameters to list all languages and numbers.
 
 ### WebSite #2
 
-Coming soon ... for now checkout a previous project I made that downloaded Audio and Text from [http://www.audiobible.com/](http://www.audiobible.com/)
+Coming soon ... for now checkout a previous project I made that downloaded Audio and Text from [http://www.audiobible.com/](http://www.audiobible.com/) it's more of a python console tool for searching text in the bible and the readme is loaded with research I was doing, from last year.
 
 - [https://github.com/AudioBible/KJV](https://github.com/AudioBible/KJV)
 
