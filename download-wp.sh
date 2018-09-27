@@ -167,23 +167,24 @@ function download_audiobible_zip_files() {
                 rm "${BASEDIR}/${LANG_NUMBER}-${book}.htm";
             fi
             if [ "${name}" != "" ]; then
+                echo "DESTINATION: ${LANG_NAME}/${book} - ${name}.zip";
                 destination="${BASEDIR}/${LANG_NAME}/${book} - ${name}.zip";
-                echo "GET ZIP: ${ZIP_ROOT_URL}/${LANG_NUMBER}_${book}.zip";
-                curl -L -C - "${ZIP_ROOT_URL}/${LANG_NUMBER}_${book}.zip" -o "${destination}";
-                if [ "${EXTRACT_ZIP_FILES}" = true ]; then
-                    if [ -f "${destination}" ]; then
-                        if [ ! -d "${BASEDIR}/${LANG_NAME}/${book} - ${name}" ]; then
-                            unzip -o "${destination}" -d "${BASEDIR}/${LANG_NAME}";
-                            mv "${BASEDIR}/${LANG_NAME}/${book}" "${BASEDIR}/${LANG_NAME}/${book} - ${name}"
-                        fi
-                        if [ "${REMOVE_ZIP_FILES}" = true ]; then
-                            rm "${destination}";
-                        fi
+            else
+                echo "DESTINATION: ${LANG_NAME}/${book}.zip";
+                destination="${BASEDIR}/${LANG_NAME}/${book}.zip";
+            fi
+            echo "GET ZIP: ${ZIP_ROOT_URL}/${LANG_NUMBER}_${book}.zip";
+            curl -L -C - "${ZIP_ROOT_URL}/${LANG_NUMBER}_${book}.zip" -o "${destination}";
+            if [ "${EXTRACT_ZIP_FILES}" = true ]; then
+                if [ -f "${destination}" ]; then
+                    if [ ! -d "${BASEDIR}/${LANG_NAME}/${book} - ${name}" ]; then
+                        unzip -o "${destination}" -d "${BASEDIR}/${LANG_NAME}";
+                        mv "${BASEDIR}/${LANG_NAME}/${book}" "${BASEDIR}/${LANG_NAME}/${book} - ${name}"
+                    fi
+                    if [ "${REMOVE_ZIP_FILES}" = true ]; then
+                        rm "${destination}";
                     fi
                 fi
-            else
-                echo "Unable to get: name of book";
-                exit 1;
             fi
         done
     fi
